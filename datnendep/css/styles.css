@@ -174,12 +174,61 @@ table { border-collapse: collapse; border-spacing: 0; }
 Headings
 ========================================================================== */
 h1.chain { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: url(../img/cog-icon.png) no-repeat top center; padding-top: 75px; }
-h2.frame { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: url(../img/frame-icon.png) no-repeat top center; padding-top: 65px; margin-top: 70px; }
-h2.mech { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: url(../img/mech-icon.png) no-repeat top center; padding-top: 65px; margin-top: 70px; }
+h1.chain_no_logo { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; padding-top: 35px; }
+h1.logo { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: url(../img/logo_gialong.png) no-repeat top center; padding-top: 35px; padding-bottom:120px; }
+h1.text-tomato{ font-size: 18px; color:Tomato; text-align: center; font-size: 14px; font-weight: 300; word-spacing: 2px; line-height: 1.8em; margin-top: 25px;}
+h2.frame { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; padding-top: 10px; margin-top: 20px; }
+h2.mech { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; padding-top: 10px; margin-top: 50px; }
 h2.front-frame { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: url(../img/front-icon.png) no-repeat top center; padding-top: 65px; margin-top: 70px; }
 h2.twitter-post-username { color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; margin-top: 30px; }
 h2.twitter-post-username span { color: #848789; font-weight: 300; }
-h2.logo-header { text-align: center; color: #848789; letter-spacing: 1px; font-size: 24px; font-weight: 300; background: url(../img/main-logo.png) no-repeat top center; padding-top: 120px; margin: 70px 0 40px 0; font-style: italic; }
+h2.logo-header { text-align: center; color: #848789; letter-spacing: 1px; font-size: 24px; font-weight: 300; background: url(../img/logo_gialong2.png) no-repeat top center; padding-top: 120px; margin: 70px 0 40px 0; font-style: italic; }
+@media screen and (max-width:640px) {
+	h1.logo {
+		width: 100%;
+		background-size: 100% 100%;
+		text-align: center;
+		text-transform: uppercase;
+		color: #353738;
+		letter-spacing: 2px;
+		font-size: 18px;
+		font-weight: 600;
+		background: url(../img/logo_gialong.png) no-repeat top center;
+		background-size: contain, cover;
+		padding-top: 35px;
+		padding-bottom:120px;
+	}
+
+}
+@media screen and (max-width:1200px) {
+	h1.logo {
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		color: #353738;
+		letter-spacing: 2px;
+		font-size: 18px;
+		font-weight: 600;
+		background: url(../img/logo_gialong.png) no-repeat top center;
+		background-size: contain, cover;
+		padding-top: 35px;
+		padding-bottom:120px;
+	}
+}
+
+@media only screen and (max-width:1200px) {
+	h1.logo {
+		width: 100%;
+		color: #353738;
+		letter-spacing: 2px;
+		font-size: 18px;
+		font-weight: 600;
+		background: url(../img/logo_gialong.png) no-repeat top center;
+		background-size: contain, cover;
+		padding-top: 35px;
+		padding-bottom:50px;
+	}
+}
 /* ==========================================================================
 User Styles
 ========================================================================== */
@@ -195,9 +244,9 @@ a { color: #282f35; -webkit-transition: all .25s ease; -moz-transition: all .25s
 a:hover { color: #64c29e; text-decoration: none; }
 p { text-align: center; font-size: 14px; color: #848789; font-weight: 300; word-spacing: 2px; line-height: 1.8em; margin-top: 25px; }
 p.text-intro { font-size: 18px; }
-.hero { background: url(../img/hero-bg.jpg) no-repeat top center #f4f5fc; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 685px; }
+.hero { background: url(../img/bg_menu_small.jpg) no-repeat top center #f4f5fc; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 685px; }
 nav { height: 85px; margin-top: 30px; position: relative; }
-.logo-holder { background: url(../img/main-logo.png) no-repeat center center; width: 94px; height: 85px; position: absolute; top: 0; left: 327px; }
+.logo-holder { background: url(../img/logo_gialong2.png) no-repeat center center; width: 94px; height: 85px; position: absolute; top: 0; left: 327px; }
 .responsive-logo { display: hidden; }
 header { background-color: #f4f5fc; }
 header ul { padding-top: 35px; }
@@ -207,7 +256,7 @@ header ul li a { display: block; margin: 0 30px; color: #4d4959; }
 .intro { padding: 115px 0; background-color: #fbfbfb; }
 .section-1 { background: url(../img/eco1.png) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
 .section-2 { background: url(../img/du-an-gia-long-city-06.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
-.section-3 { background: url(../img/red-frame.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-3 { background: url(../img/gia-long-residence.png) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
 .section-4 { background: url(../img/red-bike.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; }
 .section-text { position: relative; height: 600px; }
 .nopadding { padding: 0 !important; margin: 0 !important; }
@@ -218,9 +267,9 @@ header ul li a { display: block; margin: 0 30px; color: #4d4959; }
 .frame-red { background: url(../img/chrome-wheels.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 .section-text p { padding: 0 60px; text-align: justify; }
 .arrow { background: url(../img/arrow.png) no-repeat center center; width: 21px; height: 10px; margin: -1px auto 0 auto; }
-.logo-1 { width: 113px; height: 118px; background: url(../img/bicycle-logo.png); position: absolute; left: 50%; top: 50%; margin-left: -56px; margin-top: -59px; }
-.logo-2 { width: 177px; height: 152px; background: url(../img/vintage-logo.png); position: absolute; left: 50%; top: 50%; margin-top: -70px; margin-left: -90px; }
-.logo-3 { width: 208px; height: 67px; background: url(../img/bicycles-sml-logo.png); position: absolute; left: 50%; top: 50%; margin-left: -110px; margin-top: -10px; }
+.logo-1 { width: 100%; height: 118px; background: url(../img/text_gialong_city.png); position: absolute; left: 50%; top: 50%; margin-left: -56px; margin-top: -59px; background-repeat: no-repeat }
+.logo-2 { width: 100%; height: 118px; background: url(../img/text_gialong_city.png); position: absolute; left: 50%; top: 50%; margin-top: -56px; margin-left: -59px;  background-repeat: no-repeat}
+.logo-3 { width: 208px; height: 100%; background: url(../img/text_gialong_residence.png); position: absolute; left: 50%; top: 50%; margin-left: -110px; margin-top: -10px; background-repeat: no-repeat }
 .flex-container { background-color: #f7f7f7; padding: 125px 0 35px; text-align: center; }
 .flex-twitter-icon { width: 32px; height: 27px; background: url(../img/twitter-bird.png) no-repeat center center; margin: 0 auto; }
 p.twitter-post { color: #848789; font-size: 24px; font-style: italic; font-weight: 300; margin-bottom: 100px; }
@@ -243,7 +292,7 @@ p.twitter-post { color: #848789; font-size: 24px; font-style: italic; font-weigh
 a.close-overlay { display: block; position: absolute; top: 0; right: 0; z-index: 20; width: 45px; height: 45px; font-size: 20px; font-weight: 700; color: #fff; line-height: 45px; text-align: center; background-color: #000; cursor: pointer; }
 a.close-overlay.hidden { display: none }
 #effect .overlay { position: absolute; display: block; top: 0; bottom: 0; left: 0; right: 0; background: rgba(100, 194, 158, 0.8); opacity: 0; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
-#effect .overlay a.expand { position: absolute; left: 0; right: 0; top: 0; content: ""; margin: 0 auto; border-radius: 30px; text-align: center; color: #fff; line-height: 50px; font-weight: 600; font-size: 14px; opacity: 0; text-transform: uppercase; letter-spacing: 3px; background: url(../img/white-bike-icon.png) no-repeat top center; padding-top: 25px; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; display: block; }
+#effect .overlay a.expand { position: absolute; left: 0; right: 0; top: 0; content: ""; margin: 0 auto; border-radius: 30px; text-align: center; color: #fff; line-height: 50px; font-weight: 600; font-size: 14px; opacity: 0; text-transform: uppercase; letter-spacing: 3px; padding-top: 25px; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; display: block; }
 #effect .img { overflow: hidden }
 #effect .img.hover .overlay { opacity: 1 }
 #effect .img.hover .overlay a.expand { top: 50%; margin-top: -30px; opacity: 1; }
@@ -269,3 +318,47 @@ footer p { font-size: 13px; margin: 0; }
 .pintrest-icon { background: url(../img/pintrest-icon.png); height: 34px; width: 35px; display: block; text-indent: -9999px; }
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 { visibility: hidden; }
 .bounceInLeft, .bounceInRight, .fadeInUp { visibility: visible; }
+
+.nav{
+	background-color: transparent;
+}
+
+.nav>li{
+	float: bottom;
+	margin-right: 15px;
+}
+
+.nav>li>a{
+	text-transform: uppercase;
+	color: transparent;
+}
+
+.nav li{
+	position: relative;
+}
+
+.nav li a{
+	padding: 10px;
+	line-height: 20px;
+	display: inline-block;
+}
+
+.nav .sub-menu{
+	display: none;
+	position: absolute;
+	float: left;
+	top: 0;
+	left: 100%;
+	width: 200px;
+	background-color: transparent;
+	padding: 5px 20px;
+}
+
+.nav li:hover>.sub-menu{
+	display: block;
+}
+
+.nav>li>.sub-menu{
+	top: 40px;
+	left: 0;
+}
